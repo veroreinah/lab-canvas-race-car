@@ -14,7 +14,7 @@ function Board(width, height) {
 }
 
 Board.prototype.move = function() {
-  this.centralLineOpts.posY++;
+  this.centralLineOpts.posY += 2;
   if (this.centralLineOpts.posY === 20) {
     this.centralLineOpts.posY = -30;
   }

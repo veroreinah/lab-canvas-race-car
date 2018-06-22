@@ -2,6 +2,7 @@ function Car(x, y, minX, maxX) {
   this.posX = x;
   this.posY = y;
   this.width = 50;
+  this.height = 101;
   this.maxSpeed = 5;
   this.movX = 0;
   this.img = new Image();
@@ -33,5 +34,5 @@ Car.prototype.move = function() {
 };
 
 Car.prototype.draw = function(ctx) {
-  ctx.drawImage(this.img, this.posX, this.posY, this.width, 101);
+  ctx.drawImage(this.img, this.posX, this.posY, this.width, this.height);
 };
